@@ -3,75 +3,79 @@
 
 <head>
 
-    <title>Sayan Mondal | Developer Portfolio</title>
+    <title>Sayan Mondal | Portfolio</title>
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial;
-            scroll-behavior: smooth;
-            background: #0f172a;
-            color: white;
-            transition: 0.3s;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .light {
-            background: white;
-            color: black;
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            scroll-behavior: smooth;
         }
 
         nav {
             background: #1e293b;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             padding: 15px;
-            text-align: center;
             position: sticky;
             top: 0;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 10px 15px;
             font-weight: bold;
         }
 
         header {
             text-align: center;
-            padding: 50px;
+            padding: 50px 20px;
             background: #1e293b;
         }
 
         header img {
-            width: 150px;
+            width: 140px;
             border-radius: 50%;
             border: 4px solid white;
+            margin-bottom: 15px;
         }
 
         .typing {
             color: #38bdf8;
-            font-size: 20px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
         }
 
         section {
-            padding: 60px;
             max-width: 900px;
             margin: auto;
-            opacity: 0;
-            transform: translateY(40px);
-            transition: 1s;
-        }
-
-        .show {
-            opacity: 1;
-            transform: translateY(0);
+            padding: 60px 20px;
         }
 
         h2 {
             border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
         }
 
         .skill {
@@ -97,70 +101,47 @@
             border-radius: 8px;
         }
 
-        button {
-            padding: 10px 20px;
-            background: #38bdf8;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
         input,
         textarea {
+
             width: 100%;
             padding: 10px;
-            margin-top: 10px;
-            border-radius: 5px;
             border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background: #1e293b;
+            margin-top: 40px;
         }
 
-        .theme-btn {
-            position: fixed;
-            top: 15px;
-            right: 15px;
+        /* Mobile */
+
+        @media (max-width:600px) {
+
+            header img {
+                width: 110px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 8px 0;
+            }
+
         }
-
-        /* Mobile Responsive */
-
-@media (max-width:768px){
-
-nav{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-nav a{
-display:block;
-margin:10px 0;
-}
-
-header{
-padding:30px 15px;
-}
-
-header img{
-width:110px;
-}
-
-section{
-padding:40px 20px;
-}
-
-}
     </style>
 
 </head>
 
 <body>
-
-    <button class="theme-btn" onclick="toggleTheme()">Theme</button>
 
     <nav>
 
@@ -176,17 +157,18 @@ padding:40px 20px;
 
         <img src="my photo.jpeg">
 
-        <h1>Sayan Mondal</h1>
+<h1>SAYAN MONDAL</h1>
 
-        <p class="typing" id="typing"></p>
+<p class=" typing" id="typing"></p>
 
         <p>Email: mondalsayan565@gmail.com</p>
+
         <p>Phone: +91 9123373858</p>
 
-        <br>
-
         <a href="Sayan Mondal CV.pdf" download>
+
             <button>Download CV</button>
+
         </a>
 
     </header>
@@ -196,8 +178,8 @@ padding:40px 20px;
         <h2>About Me</h2>
 
         <p>
-            Diploma student in Computer Science & Technology passionate about programming
-            and web development.
+            Diploma student in Computer Science & Technology passionate about
+            programming and web development.
         </p>
 
     </section>
@@ -207,7 +189,9 @@ padding:40px 20px;
         <h2>Education</h2>
 
         <p>Madhyamik – WBBSE – 2022 – 55.7%</p>
+
         <p>Higher Secondary – WBCHSE – 2024 – 63.4%</p>
+
         <p>Now Studying Diploma in Computer Science & Technology – WBSCTE</p>
 
     </section>
@@ -217,17 +201,27 @@ padding:40px 20px;
         <h2>Skills & Certifications</h2>
 
         <div class="skill">
+
             Diploma in Information Technology (DITA)
+
             <div class="bar">
+
                 <div class="progress" style="width:85%"></div>
+
             </div>
+
         </div>
 
         <div class="skill">
+
             Advanced Diploma in Information Technology (ADITA)
+
             <div class="bar">
+
                 <div class="progress" style="width:80%"></div>
+
             </div>
+
         </div>
 
     </section>
@@ -240,7 +234,7 @@ padding:40px 20px;
 
             <h3>Online CV Website</h3>
 
-            <p>Created a live CV website using HTML and hosted it online.</p>
+            <p>Created a live CV website using HTML and hosted on GitHub Pages.</p>
 
         </div>
 
@@ -248,7 +242,7 @@ padding:40px 20px;
 
             <h3>Portfolio Website</h3>
 
-            <p>A personal portfolio showcasing skills and education.</p>
+            <p>Personal developer portfolio showcasing education and skills.</p>
 
         </div>
 
@@ -258,27 +252,32 @@ padding:40px 20px;
 
         <h2>Contact Me</h2>
 
-        <input type="text" placeholder="Your Name">
+        <form action="https://formspree.io/f/xpwrzqzk" method="POST">
 
-        <input type="email" placeholder="Your Email">
+            <input type="text" name="name" placeholder="Your Name" required>
 
-        <textarea rows="4" placeholder="Your Message"></textarea>
+            <input type="email" name="email" placeholder="Your Email" required>
 
-        <br><br>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
 
-        <button>Send Message</button>
+            <br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
 
     </section>
 
     <footer>
 
-        <p>©2026 Sayan Mondal</p>
+        <p>© 2026 Sayan Mondal</p>
 
     </footer>
 
     <script>
 
         let text = "Computer Science Student | Elitte Institute of Engineering & Management";
+
         let i = 0;
 
         function typing() {
@@ -289,40 +288,13 @@ padding:40px 20px;
 
                 i++;
 
-                setTimeout(typing, 80);
+                setTimeout(typing, 60);
 
             }
 
         }
 
         typing();
-
-        function toggleTheme() {
-            document.body.classList.toggle("light");
-        }
-
-       let text="Computer Science Student | Future Developer";
-let i=0;
-
-function typing(){
-
-if(i<text.length){
-
-document.getElementById("typing").innerHTML+=text.charAt(i);
-
-i++;
-
-setTimeout(typing,80);
-
-}
-
-}
-
-typing();
-
-function toggleTheme(){
-document.body.classList.toggle("light");
-}
 
     </script>
 
