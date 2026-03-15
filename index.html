@@ -301,21 +301,28 @@ padding:40px 20px;
             document.body.classList.toggle("light");
         }
 
-        let sections = document.querySelectorAll("section");
+       let text="Computer Science Student | Future Developer";
+let i=0;
 
-        window.addEventListener("scroll", () => {
+function typing(){
 
-            sections.forEach(sec => {
-                let top = window.scrollY;
-                let offset = sec.offsetTop - 300;
+if(i<text.length){
 
-                if (top > offset) {
-                    sec.classList.add("show");
-                }
+document.getElementById("typing").innerHTML+=text.charAt(i);
 
-            })
+i++;
 
-        })
+setTimeout(typing,80);
+
+}
+
+}
+
+typing();
+
+function toggleTheme(){
+document.body.classList.toggle("light");
+}
 
     </script>
 
