@@ -981,3 +981,19 @@ footer {
   }
 
 }
+.about-img img {
+    width: 250px;
+    height: 250px;   /* MUST same as width */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about-img img {
+        width: 200px;
+        height: 200px;  /* SAME maintain korte hbe */
+        margin: auto;
+        display: block;
+    }
+}
