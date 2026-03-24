@@ -326,7 +326,7 @@ button{
   color:#ccc;
 }
 
-/* 🔥 Hover Glow Effect */
+/* Hover Glow Effect */
 .cert-card:hover{
   transform:translateY(-10px);
   box-shadow:0 0 25px cyan;
@@ -848,7 +848,7 @@ button{
 }
 
 .contact-container {
-  display: flex;              /* 🔥 grid bad diye flex use kor */
+  display: flex;              
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
@@ -878,7 +878,7 @@ button{
 }
 
 form button {
-  width: 490px;              /* choto button */
+  width: 490px;           
   margin-top: 10px;
   padding: 12px;
   border-radius: 25px;
@@ -887,7 +887,7 @@ form button {
   color: black;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;   /* important */
+  transition: all 0.3s ease;  
 }
 
 /*HOVER */
@@ -983,7 +983,7 @@ footer {
 }
 .about-img img {
     width: 250px;
-    height: 250px;   /* MUST same as width */
+    height: 250px; 
     object-fit: cover;
     border-radius: 50%;
 }
@@ -992,7 +992,7 @@ footer {
 @media (max-width: 768px) {
     .about-img img {
         width: 200px;
-        height: 200px;  /* SAME maintain korte hbe */
+        height: 200px; 
         margin: auto;
         display: block;
     }
