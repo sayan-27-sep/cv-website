@@ -997,3 +997,9 @@ footer {
         display: block;
     }
 }
+html{
+  scroll-behaviour: smooth;
+}
+section{
+  scroll-margin-top: 100px;
+}
